@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+
+# System Files
+.DS_Store
+*.ini
+
+# Vite Build
+**/dist/
+**/public/
+
+# Java Build
+**/bin/
+
+# Firebase
+**/.firebase/
+
+# Logs
+**/*.log

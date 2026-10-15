@@ -1,0 +1,46 @@
+{
+  "chat.disableAIFeatures": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.removeUnusedImports": "always"
+  },
+  "editor.codeLens": false,
+  "editor.formatOnSave": true,
+  "editor.inlayHints.enabled": "off",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "files.exclude": {
+    ".devcontainer": true,
+    ".vscode": true,
+    "**/.scripts": true,
+    "node_modules": true
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
+}
