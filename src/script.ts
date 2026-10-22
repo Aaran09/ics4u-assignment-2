@@ -34,3 +34,35 @@ const draw = () => {
 };
 
 
+
+const itemList = document.getElementById("item-list");
+const addBtn = document.getElementById("add-btn");
+const clearBtn = document.getElementById("clear-btn");
+
+let count = 0;
+
+const addItem = () => {
+    count++;
+    const li = document.createElement("li");
+    li.className = "flex items-center gap-2";
+    li.innerHTML = `
+        <button class="flex-1 text-left p-3 rounded-xl bg-slate-800/40 border border-slate-700 hover:bg-slate-800/70 transition">
+        <div class="grid grid-cols-4 font-mono text-slate-200 text-sm"</div>
+      `;
+
+    history.appendChild(li);
+}
+
+itemList.addEventListener("click", (e) => {
+    const target = e.target;
+    if (target.classList.contains("delete-btn")) {
+        target.closest("li")?.remove();
+    }
+});
+
+addBtn.addEventListener("click", addItem);
+
+clearBtn.addEventListener("click", () => {
+    itemList.innerHTML = "";
+    count = 0;
+})
