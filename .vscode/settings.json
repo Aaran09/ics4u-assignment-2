@@ -1,5 +1,5 @@
 {
-  "chat.disableAIFeatures": true,
+  "chat.disableAIFeatures": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": "always",
     "source.removeUnusedImports": "always"
@@ -42,5 +42,6 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "biomejs.biome"
-  }
+  },
+  "liveServer.settings.port": 5501
 }
