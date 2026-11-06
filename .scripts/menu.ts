@@ -34,7 +34,7 @@ import { launchViteDevServer, showBanner, stopService } from "#ics4u-assignment-
         await text({ message: chalk.green("Code formatted. Press Enter to return to the menu...") });
         break;
       case "spell-check":
-        await $({ stdio: "inherit", nothrow: true })`npm run spell-check`;
+        await $({ nothrow: true, stdio: "inherit" })`npm run spell-check`;
         await text({ message: chalk.green("Spell check complete. Press Enter to return to the menu...") });
         break;
       case "delete": {
